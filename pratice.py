@@ -80,3 +80,14 @@ print('\nA float casted into and int', int(2.3))
 
 # requires "random" import
 print('\nRandom Number from 1-100', random.randint(1, 100))
+
+# getting input from the user using a while loop
+confirmed = False
+
+while confirmed == False:
+
+    name = input('Please enter your name: ')
+    confirm = input('Confirm name (Y/N) ')
+    if confirm == 'Y':
+        confirmed = True
+print('Welcome ', name)
